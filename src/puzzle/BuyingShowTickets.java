@@ -17,16 +17,35 @@ public class BuyingShowTickets {
 			tickets[i] = sc.nextInt();
 		}
 		System.out.println("Position in array:");
-		int index = sc.nextInt();
-		int r = waitingTime(tickets, index);
+		int p = sc.nextInt();
+		long r = waitingTime(tickets, p);
 		System.out.println("Output: " + r);
-
 	}
 
-	static int waitingTime(int[] a, int index) {
+	static long waitingTime(int[] tickets, int p) {
 
-		int outputTime = 0, time = 0;
-		return time;
+		int sum = 0, count = 0, ifcount = 0;
+		int temp[] = new int[tickets.length];
+		for (int num : tickets) {
+			sum = sum + num;
+		}
+		for (int i : temp) {
+			temp[i] = 0;
+		}
+		for (int i = 0; i < tickets.length; i++) {
+			for (int j = 0; j < temp.length; j++) {
+				if (i >= 1 && tickets[j] == temp[j]) {
+					ifcount++;
+				} else {
+					temp[j] = temp[j] + 1;
+					count++;
+				}
+				if (j == p && tickets[j] == temp[j]) {
+					return count;
+				}
+			}
+		}
+		return 0;
 	}
 
 }

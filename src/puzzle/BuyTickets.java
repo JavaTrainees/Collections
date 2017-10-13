@@ -4,7 +4,7 @@ class BuyTickets {
 
 	public static void main(String args[]) {
 
-		int index = 3, time = 0, a[] = new int[] { 5, 5, 2, 3 }, n;
+		int index = 2, time = 0, a[] = new int[] { 2,6,3,4,5 }, n;
 		n = a.length;
 		for (int i = 0; i < n; i++) {
 			if (a[i] <= a[index])
