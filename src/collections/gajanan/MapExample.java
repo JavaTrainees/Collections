@@ -1,4 +1,4 @@
-package collections.map;
+package collections.gajanan;
 
 public class MapExample {
 

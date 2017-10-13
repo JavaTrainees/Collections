@@ -1,4 +1,4 @@
-package collections.list;
+package collections.swapna;
 
 public class ListExample {
 

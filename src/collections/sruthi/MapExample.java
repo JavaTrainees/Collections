@@ -1,4 +1,4 @@
-package collections.set;
+package collections.sruthi;
 
 public class MapExample {
 
