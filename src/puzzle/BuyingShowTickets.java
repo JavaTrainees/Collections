@@ -26,22 +26,6 @@ public class BuyingShowTickets {
 	static int waitingTime(int[] a, int index) {
 
 		int outputTime = 0, time = 0;
-
-		 while( a[index] != 0){
-			 if(a[0] > 0){
-				 a[0] = a[0]-1;
-				 time++;
-			 }
-			 updateArray(a);
-		}
-	static void updateArray(int a[]){
-		int i, n = a.length, temp = a[0];
-		for (i = 0; i < n-1; i++)
-			a[i] = a[i+1];
-		a[n-1] = temp;
-		index = (index + n-1)%n;
-	}
-		
 		return time;
 	}
 
