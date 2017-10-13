@@ -1,3 +1,3 @@
-# Techolution
+#Java Training
 
-Open src folder -> and find the puzzle source code. 
+1. Collections
