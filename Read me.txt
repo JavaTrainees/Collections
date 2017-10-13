@@ -1,6 +1,0 @@
-Java Collections :
-------------------------------
-Assignments on collections.
-1. List
-2. Set
-3. Map
