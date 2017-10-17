@@ -1,4 +1,4 @@
-package com.map;
+package collections.gajanan;
 
 import java.util.*;
 
